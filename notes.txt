@@ -1,0 +1,44 @@
+Combination of components (class or functional)
+
+Install : npx create-react-app app_name
+          cd app_name/
+          npm start
+
+
+Web pack :
+    1. module export-import
+    2. packages whole bunch of css,img,js files one single page 
+       for the browser 
+    3. hot reloading - reload only relevant files
+
+Import and export : 
+
+1. import react from 'react';
+   import react-dom from 'react-dom';  // searches in builtin node_modules
+   
+
+   helper.js
+
+   function helpful(){
+      console.log('Something helpful')
+   }
+   function sort(){
+      console.log('Something helpful')
+   }
+   function sing(){
+      console.log('Something helpful')
+   }
+
+   export default helpful;
+   export {sort, sing};
+
+
+   index.js
+
+   import helpful , {sort, sing } from './helper.js'
+
+   h();
+   sort();
+   sing();
+
+* use default export to export a sure or obvious thing 
