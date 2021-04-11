@@ -20,7 +20,7 @@ class TodoListForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        const newTaskItem = {...this.state,id : uuid()}
+        const newTaskItem = {...this.state, id : uuid(), completed : false}
         this.props.addTaskItem(newTaskItem)
         this.setState({task : ''})
     }
